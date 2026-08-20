@@ -1,6 +1,6 @@
 # Synthetic Augmentation in Imbalanced Learning
 
-Official simulation and real-data code for:
+Simulation and real-data code for:
 
 > **Synthetic Augmentation in Imbalanced Learning: When It Helps, When It Hurts, and How Much to Add**  
 > Zhengchi Ma and Anru R. Zhang, Duke University
