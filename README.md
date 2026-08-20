@@ -42,7 +42,7 @@ The classes already have equal first-order influence in relevant directions near
 
 The diagnostics use real training data and cross-fitted synthetic observations. Validation observations are reserved for candidate selection.
 
-Let (n_0-n_1) be the class-balance gap, with class 0 the majority:
+Let \(n_0-n_1\) be the class-balance gap, with class 0 the majority:
 
 | Regime | Default candidate sizes |
 | --- | --- |
