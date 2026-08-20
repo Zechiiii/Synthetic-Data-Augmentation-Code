@@ -275,16 +275,3 @@ Checked-in notebook outputs and figures provide reference results.
 
 Do not commit `mimic3.db`, derived patient-level CSVs, or protected data. Users must comply with PhysioNet requirements, institutional approval, the MIMIC-III agreement, and applicable privacy rules.
 
-## Citation
-
-```text
-Ma, Zhengchi, and Anru R. Zhang.
-“Synthetic Augmentation in Imbalanced Learning:
-When It Helps, When It Hurts, and How Much to Add.”
-```
-
-Add a BibTeX entry when publication or preprint metadata are available.
-
-## Contact
-
-The manuscript lists Anru R. Zhang as corresponding author: `anru.zhang@duke.edu`.
