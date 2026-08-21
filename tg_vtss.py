@@ -1,6 +1,6 @@
 """Theory-guided validation-tuned synthetic-size (TG-VTSS) utilities.
 
-The implementation follows Algorithm 1 in ``Drafts (7).pdf``.  Diagnostics
+The implementation follows Algorithm 1.  Diagnostics
 are computed only from real training observations and cross-fitted synthetic
 observations; the returned candidate sizes are subsequently tuned using the
 caller's balanced validation criterion.
@@ -55,13 +55,7 @@ def _fit_balanced(estimator, X, y):
 
 
 def _scores_and_hessians(model, X, y):
-    """Return per-observation score vectors and Hessians for log loss.
-
-    Linear logistic models use their exact coefficient/intercept
-    parameterization.  For other probabilistic classifiers the calculation is
-    in their one-dimensional logit (intercept-shift) direction, which is the
-    identifiable loss direction exposed by ``predict_proba``.
-    """
+    
     p = np.clip(model.predict_proba(X)[:, 1], 1e-10, 1 - 1e-10)
     if hasattr(model, "steps"):
         features = model[:-1].transform(X)
